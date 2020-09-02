@@ -40,7 +40,7 @@ const Import: React.FC = () => {
   function submitFile(files: File[]): void {
     const newArray: FileProps[] = [];
 
-    files.map(item => {
+    files.forEach(item => {
       newArray.push({
         file: item,
         name: item.name,
